@@ -1,0 +1,129 @@
+.TodoItem
+{
+    display: flex;    
+    min-width: 300px;
+    max-width: 700px;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px 0 #00000005;    
+    color: var(--primary-txt-cr);
+}
+.TodoItem:hover
+{
+    box-shadow: 0 0 0 5px #00000010;
+}
+.todo-item-marked *, 
+.todo-item-closed *
+{
+    color: var(--primary-bg-cr);
+}
+.todo-item-closed .ant-btn-primary,
+.todo-item-marked .ant-btn-primary
+{
+    background-color: var(--primary-bg-cr) !important;
+    border-color: var(--primary-bg-cr) !important;
+}
+.todo-item-normal 
+{
+    background-color: var(--primary-bg-cr);    
+}
+.todo-item-marked
+{
+    background-color: var(--success-cr);
+}
+.todo-item-closed
+{
+    background-color: var(--error-cr);
+}
+.todo-item-details
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+.todo-item-timestamp
+{
+    font-size: 12px;
+}
+.todo-item-text
+{
+    font-weight: 600;
+}
+.todo-item-actions
+{
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    gap: 15px;    
+    position: relative;
+    cursor: pointer;
+}
+.todo-item-edit-btn, 
+.todo-item-close-btn,
+.todo-item-mark-btn
+{    
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+}
+.todo-item-actions:hover .ant-btn-primary
+{    
+    position: initial;
+    opacity: 1;
+    transform: scale(1);
+}
+.todo-item-actions .ant-btn-primary:hover
+{
+    opacity: 0.8;
+}
+.todo-item-actions .ant-btn-primary:active
+{
+    opacity: 0.5;
+}
+
+/* Normal Actions */
+.todo-item-normal .todo-item-actions .ant-btn-primary:nth-child(1)
+{
+    background-color: var(--error-cr);
+    border-color: var(--error-cr);
+}
+.todo-item-normal .todo-item-actions .ant-btn-primary:nth-child(2)
+{
+    background-color: var(--info-cr);
+    border-color: var(--info-cr);
+}
+.todo-item-normal .todo-item-actions .ant-btn-primary:nth-child(3)
+{
+    background-color: var(--error-cr);
+    border-color: var(--error-cr);   
+}
+.todo-item-normal .todo-item-actions .ant-btn-primary:nth-child(4)
+{    
+    background-color: var(--success-cr);
+    border-color: var(--success-cr);
+}
+
+/* Marked & Closed Actions */
+.todo-item-marked .todo-item-actions .ant-btn-primary:nth-child(1) svg,
+.todo-item-closed .todo-item-actions .ant-btn-primary:nth-child(1) svg
+{
+    fill: var(--error-cr);
+}
+.todo-item-marked .todo-item-actions .ant-btn-primary:nth-child(2) svg,
+.todo-item-closed .todo-item-actions .ant-btn-primary:nth-child(2) svg
+{
+    fill: var(--info-cr);
+}
+.todo-item-marked .todo-item-actions .ant-btn-primary:nth-child(3) svg,
+.todo-item-closed .todo-item-actions .ant-btn-primary:nth-child(3) svg
+{
+    fill: var(--error-cr);
+}
+.todo-item-marked .todo-item-actions .ant-btn-primary:nth-child(4) svg,
+.todo-item-closed .todo-item-actions .ant-btn-primary:nth-child(4) svg
+{    
+    fill: var(--success-cr);
+}

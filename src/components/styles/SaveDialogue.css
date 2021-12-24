@@ -1,0 +1,94 @@
+.SaveDialogue
+{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;    
+}
+.save-dialogue-close
+{
+    display: none;
+}
+.save-dialogue-open
+{
+    display: block;
+}
+.save-dialogue-close .save-dialogue-box
+{
+    margin-bottom: 50px;    
+}
+.save-dialogue-open .save-dialogue-box
+{
+
+}
+.save-dialogue-bg-box
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #00000030;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+.save-dialogue-box
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-bg-cr);
+    padding: 20px;
+    border-radius: 15px;
+}
+.save-dialogue-in
+{
+    padding: 5px 20px;
+    box-sizing: border-box;
+    width: 500px;
+    border: none;
+    background-color: var(--input-bg-cr);
+    border-radius: 10px;
+    font-size: 16px;
+    transition: .3s;
+}
+.save-dialogue-in:focus
+{
+    background-color: var(--primary-bg-cr);
+    box-shadow: 0 0 0 1px var(--success-cr);
+}
+.save-dialogue-actions
+{
+
+}
+.save-dialogue-actions button
+{
+    padding: 5px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.save-dialogue-actions button:hover
+{
+    opacity: .8;
+}
+.save-dialogue-actions button:active
+{
+    opacity: .5;
+}
+.save-dialogue-action-1
+{
+    background-color: var(--light-success-cr);
+    color: var(--success-cr);
+}
+.save-dialogue-action-2
+{
+    background-color: var(--light-error-cr);
+    color: var(--error-cr);
+}

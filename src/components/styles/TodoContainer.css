@@ -1,0 +1,16 @@
+.TodoContainer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    gap: 20px;
+    padding: 50px;
+    background-color: white;
+    box-shadow: 0 10px 20px 0 #00000010;
+    border-radius: 15px;
+    box-sizing: border-box;
+    width: fit-content;
+    width: -moz-fit-content;
+    min-width: 700px;    
+}

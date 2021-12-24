@@ -1,13 +1,43 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/************************ [IMPORT] Google Font: Poppins ************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/************************ CSS Rules ************************/
+*
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    font-family: var(--poppins-ff);
+}
+:-moz-focus-inner,
+::-moz-focus-outer
+{
+    border: none;
+}
+body
+{
+    background: var(--secondary-bg-cr) !important;
+    height: fit-content !important;
+    height: -moz-fit-content !important;
+}
+:root
+{
+    /* Colors */
+    --success-cr: hsl(116, 88%, 49%);
+    --light-success-cr: hsl(116, 88%, 95%);
+    --error-cr: hsl(0, 82%, 57%);
+    --light-error-cr: hsl(0, 82%, 95%);
+    --info-cr: #4292d8;
+    --primary-bg-cr: #ffffff;
+    --secondary-bg-cr: #fdfdfd;
+    --input-bg-cr: #eeeeee;
+    --primary-txt-cr: #464255;
+    --secondary-txt-cr: #ffffff;    
+    
+    /* Font Familes */
+    --poppins-ff: 'Poppins', sans-serif;
 }
